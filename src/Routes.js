@@ -5,6 +5,7 @@ import Signup from './views/Signup';
 import Admin from './views/Admin';
 import Login from './views/Login';
 import Store from './views/Store';
+import Cart from './views/Cart';
 
 
 const Logout = ()=>{
@@ -16,11 +17,12 @@ function Routes(){
     return(
         <Router>
             <Switch>
-                <Route  path="/" exact component={Home}/>
+                <Route  path="" exact component={Home}/>
                 <Route  path="/signup" exact component={Signup}/>
                 <Route  path="/login" exact component={Login}/>
                 <Route  path="/store" exact component={Store}/>
                 <Route  path="/admin" exact component={Admin}/>
+                <Route  path="/cart" exact component={Cart}/>
                 <Route  path="/logout" exact component={Logout}/>
             </Switch>
         </Router>
