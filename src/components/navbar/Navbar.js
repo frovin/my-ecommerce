@@ -85,6 +85,7 @@ function Navbar() {
                     </ul>
                   </div>
         ) : (
+          <div className="container">
             <div className="collapse navbar-collapse">
             <ul className="navbar-nav">
               <form className="form-inline">
@@ -102,8 +103,13 @@ function Navbar() {
                 </button>
               </form>
               <li className="nav-item active">
-                <Link className="nav-link" to="/">
+                <Link className="nav-link" to="/store">
                   Tienda
+                </Link>
+              </li>
+              <li className="nav-item active">
+                <Link className="nav-link" to="/cart">
+                  Carrito
                 </Link>
               </li>
               <li className="nav-item dropdown">
@@ -128,12 +134,10 @@ function Navbar() {
                   <Link className="dropdown-item" to="/signup">
                     Registrate
                   </Link>
-                  <Link className="dropdown-item" to="/cart">
-                    Carrito
-                  </Link>
                 </div>
               </li>
             </ul>
+          </div>
           </div>
         )}
       </nav>
